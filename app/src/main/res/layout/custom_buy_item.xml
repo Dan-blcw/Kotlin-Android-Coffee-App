@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="14dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/layout_order"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/imgBuy"
+            android:layout_width="185dp"
+            android:layout_height="279dp"
+            android:background="@drawable/img_3" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBuyTil"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Tilte"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <ImageButton
+                android:id="@+id/btn_exitimg"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_backg"
+                app:srcCompat="@drawable/icon_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNote0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="Well, I have a small caveat.\nChoose the cup size you want and note that only hot and cold coffee will be made, the rest will be in low ice mode"
+            android:textSize="13sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:checked="true"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/radio_b"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="M" />
+
+            <RadioButton
+                android:id="@+id/radio_c"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hot"
+                android:checked="true"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/radiob"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="Cold" />
+
+            <RadioButton
+                android:id="@+id/radioc"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a little ice" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_order"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_backg"
+                android:text="buy now" />
+
+            <ImageButton
+                android:id="@+id/btn_cart_img"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_add_cart" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

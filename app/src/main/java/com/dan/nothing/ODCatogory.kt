@@ -1,7 +1,7 @@
 package com.dan.nothing
 
-class OutDataRecycler(
-    val id: Int,
+class ODCatogory(
+    val idCategory: Int,
     val image: String,
     val title: String,
     val descripl: String

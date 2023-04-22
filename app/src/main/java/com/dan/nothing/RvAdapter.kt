@@ -1,6 +1,5 @@
 package com.dan.nothing
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class RvAdapter(var list:List<OutDataRecycler>, val rvUtil: RvUtil): RecyclerView.Adapter<RvAdapter.TilleView>() {
+class RvAdapter(var list:List<ODCatogory>, val rvUtil: RvUtil): RecyclerView.Adapter<RvAdapter.TilleView>() {
     // class Viewholder
     inner class TilleView(itemView: View): RecyclerView.ViewHolder(itemView)
 
