@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/layout_button"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Det">
@@ -60,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="115dp"
                 android:textColor="@color/do_0"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="4dp"
                 android:textStyle="bold"
                 android:text="Ingredients"
                 android:textSize="18dp" />
@@ -77,6 +78,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
                     android:layout_marginBottom="6dp"
                     android:text="1 cup of all-purpose flour\n1 teaspoon of baking powder\n1/4 teaspoon of salt\n1/2 cup of unsalted butter, softened\n1 cup of granulated sugar\n2 large eggs\n1 teaspoon of vanilla extract\n1/4 cup of milk\n2 cups of seedless grapes, halved"
                     android:textSize="12dp" />
@@ -96,7 +99,7 @@
         android:textSize="18dp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="376dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="32dp"
@@ -107,6 +110,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
             android:layout_marginBottom="6dp"
             android:text="Preheat the oven to 350°F (175°C).In a mixing bowl, combine the cake mix, vegetable oil, eggs, and water. Mix until well combined.Add the crushed pineapple and coconut to the mixing bowl and mix until evenly distributed.Grease a 9x13 inch baking pan and pour the cake batter into the pan.Bake for 35-40 minutes or until a toothpick inserted in the center comes out clean.While the cake is baking, prepare the glaze by mixing the powdered sugar and pineapple juice together in a small bowl." />
     </androidx.cardview.widget.CardView>
@@ -134,95 +139,16 @@
             android:id="@+id/txtDescrip2"
             android:layout_width="353dp"
             android:layout_height="match_parent"
+            android:textColor="@color/black"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
             android:layout_marginBottom="6dp"
             android:text="The combination of pineapple and coconut is commonly used in various desserts and baked goods. It is a popular flavor in tropical regions where both pineapple and coconut are abundant.\nWhile the exact origin of the Pineapple Coconut dessert is unknown, it is believed to have originated in the Caribbean or Hawaii. The sweet and tangy flavor of pineapple complements the creamy and nutty flavor of coconut, creating a delicious and refreshing treat." />
     </androidx.cardview.widget.CardView>
 
-<!--    <TextView-->
-<!--        android:id="@+id/txtNothing3"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Size" />-->
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-<!--        <RadioGroup-->
-<!--            android:orientation="horizontal"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent" >-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/radioButton"-->
-<!--                android:checked="true"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="M" />-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/radioButton2"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="XL" />-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/radioButton3"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="XL" />-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/radioButton4"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="XL" />-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/radioButton5"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="XL" />-->
-<!--        </RadioGroup>-->
-
-    </LinearLayout>
-<!--    <TextView-->
-<!--        android:id="@+id/textView6"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="choose the best option" />-->
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-<!--        <RadioGroup-->
-<!--            android:orientation="horizontal"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent" >-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/R"-->
-<!--                android:checked="true"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="M" />-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/R1"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="XL" />-->
-<!--        </RadioGroup>-->
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -232,7 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textColor="@color/do_0"
+            android:textColor="@color/black"
             android:gravity="center"
             android:text="0$"
             android:textSize="28dp" />

@@ -39,6 +39,10 @@ class Home : AppCompatActivity() {
             val intent = Intent(this@Home,Person::class.java)
             startActivity(intent)
         }
+        binding.btnListOrder.setOnClickListener {
+            val intent = Intent(this@Home,CommitOrder::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun buildRVCategoryItems(type: String?) {

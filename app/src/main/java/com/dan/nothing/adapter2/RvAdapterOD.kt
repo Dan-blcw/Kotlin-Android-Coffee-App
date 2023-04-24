@@ -25,7 +25,7 @@ class RvAdapterOD(var list:List<OD>, val util: Util_demo): RecyclerView.Adapter<
             val price = findViewById<TextView>(R.id.txtRvItem2)
 
             title.text = list[position].title
-            price.text = list[position].price
+            price.text = "${list[position].price}$"
             Glide.with(context).load(list[position].image).into(image)
 
             // lắng nghe item click chọn

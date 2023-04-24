@@ -26,13 +26,20 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="259dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
                 android:fontFamily="cursive"
                 android:gravity="center_vertical"
-                android:text="Welcome To Dan Coffee"
-                android:textSize="28dp" />
+                android:text="Welcome"
+                android:textSize="36dp" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:gravity="bottom"
+                android:text=" To Dan Coffee"
+                android:textSize="24dp" />
 
         </LinearLayout>
 
@@ -62,6 +69,14 @@
                 app:srcCompat="@drawable/icon_cart" />
 
             <ImageButton
+                android:id="@+id/btn_list_order"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/icon_list_order" />
+
+            <ImageButton
                 android:id="@+id/btn_person_home"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -83,9 +98,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="cursive"
+            android:textColor="@color/do_0"
             android:text="Category"
-            android:textSize="24sp" />
+            android:textSize="32sp" />
 
         <androidx.cardview.widget.CardView
 
@@ -112,10 +128,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:textColor="@color/do_0"
             android:layout_marginTop="6dp"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="cursive"
             android:text="Choose you Best"
-            android:textSize="24sp" />
+            android:textSize="32sp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

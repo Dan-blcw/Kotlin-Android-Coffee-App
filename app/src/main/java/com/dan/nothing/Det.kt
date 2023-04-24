@@ -14,9 +14,6 @@ import com.dan.nothing.databinding.CustomBuyItemBinding
 @SuppressLint("StaticFieldLeak")
 private lateinit var binding: ActivityDetailItemBinding
 class Det : AppCompatActivity() {
-//    companion object{
-//        val listCart = mutableListOf<Int>()
-//    }
     lateinit var diolog: AlertDialog
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,16 +34,50 @@ class Det : AppCompatActivity() {
             Glide.with(applicationContext).load(oj?.image).into(diologBinding.imgBuy)
             diologBinding.btnExitimg.setOnClickListener { diolog.dismiss() }
             diologBinding.btnOrder.setOnClickListener{
-//                Toast.makeText(this@Det,"You just click on Order", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Det,"You just click on Order", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@Det,CartMenu::class.java)
-//                listCart.add(id)
+                if(diologBinding.rdS.isChecked){
+                    const.findByID(id)?.size = "Size: S"
+                }else if(diologBinding.rdM.isChecked){
+                    const.findByID(id)?.size = "Size: M"
+                }else if(diologBinding.rdL.isChecked){
+                    const.findByID(id)?.size = "Size: L"
+                }
+                if(const.findByID(id)!!.category != "Desserts"){
+                    if(diologBinding.rdhot.isChecked){
+                        const.findByID(id)?.size = "Status: Hot"
+                    }else if(diologBinding.rdcold.isChecked){
+                        const.findByID(id)?.size = "Status: Cold"
+                    }else if(diologBinding.rdlitteice.isChecked){
+                        const.findByID(id)?.size = "Status: A litte Ice"
+                    }
+                }
+                const.addByID(id)
+                const.payments = const.payments + const.findByID(id)!!.price
                 startActivity(intent)
 
             }
             diologBinding.btnCartImg.setOnClickListener {
                 Toast.makeText(this@Det,"You just click on add cart", Toast.LENGTH_SHORT).show()
-//                listCart.add(id)
-
+                if(diologBinding.rdS.isChecked){
+                    const.findByID(id)?.size = "Size: S"
+                }else if(diologBinding.rdM.isChecked){
+                    const.findByID(id)?.size = "Size: M"
+                }else if(diologBinding.rdL.isChecked){
+                    const.findByID(id)?.size = "Size: L"
+                }
+                if(const.findByID(id)!!.category != "Desserts"){
+                    if(diologBinding.rdhot.isChecked){
+                        const.findByID(id)?.size = "Status: Hot"
+                    }else if(diologBinding.rdcold.isChecked){
+                        const.findByID(id)?.size = "Status: Cold"
+                    }else if(diologBinding.rdlitteice.isChecked){
+                        const.findByID(id)?.size = "Status: A litte Ice"
+                    }
+                }
+                const.addByID(id)
+                const.payments = const.payments + const.findByID(id)!!.price
+                diolog.dismiss()
             }
             diolog = build.create()
             diolog.show()
@@ -64,7 +95,7 @@ class Det : AppCompatActivity() {
         binding.txtDescrip0.setText(oj?.ingredients)
         binding.txtDescrip1.setText(oj?.recipe)
         binding.txtDescrip2.setText(oj?.instructions)
-        binding.txtPrice.setText("Just ${oj?.price}")
+        binding.txtPrice.setText("Just ${oj?.price}$")
         Glide.with(applicationContext).load(oj?.image).into(binding.imgDetail)
     }
 }
