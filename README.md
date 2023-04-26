@@ -11,3 +11,6 @@
 ## Demo
 #### SLashHome
 ![image](https://user-images.githubusercontent.com/127305381/234641656-c7ef4b0a-fd10-49d2-a6bc-28d83e7a485a.png)
+#### Home (click category)
+![image](https://user-images.githubusercontent.com/127305381/234643321-965f086e-1852-41d1-8d01-06062e8636eb.png)
+#### Detail Item
