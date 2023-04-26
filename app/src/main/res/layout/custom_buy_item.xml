@@ -21,7 +21,7 @@
             android:id="@+id/imgBuy"
             android:layout_width="185dp"
             android:layout_height="279dp"
-            android:background="@drawable/img_3" />
+            android:background="@drawable/img_item" />
     </androidx.cardview.widget.CardView>
 
     <LinearLayout

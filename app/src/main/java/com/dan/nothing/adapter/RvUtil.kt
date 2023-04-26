@@ -1,6 +1,6 @@
-package com.dan.nothing.adapter2
+package com.dan.nothing.adapter
 
-interface Util_demo {
+interface RvUtil {
     //tên tự nghĩ ra
     fun OnClickTitle(pos: Int)
 }

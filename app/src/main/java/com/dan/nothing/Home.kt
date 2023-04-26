@@ -7,9 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dan.nothing.adapter2.OD
-import com.dan.nothing.adapter2.RvAdapterOD
-import com.dan.nothing.adapter2.Util_demo
+import com.dan.nothing.adapter.*
 import com.dan.nothing.databinding.ActivityHomeBinding
 
 @SuppressLint("StaticFieldLeak")
@@ -94,7 +92,7 @@ class Home : AppCompatActivity() {
         list.add(const.ojCategory1)
         list.add(const.ojCategory2)
         list.add(const.ojCategory3)
-        val rvAdapter = RvAdapter(list,object: RvUtil{
+        val rvAdapter = RvAdapter(list,object: RvUtil {
             override fun OnClickTitle(pos: Int) {
                 Toast.makeText(
                     this@Home,

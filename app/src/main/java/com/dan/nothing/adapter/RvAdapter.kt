@@ -1,4 +1,4 @@
-package com.dan.nothing
+package com.dan.nothing.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.dan.nothing.R
 
 class RvAdapter(var list:List<ODCatogory>, val rvUtil: RvUtil): RecyclerView.Adapter<RvAdapter.TilleView>() {
     // class Viewholder

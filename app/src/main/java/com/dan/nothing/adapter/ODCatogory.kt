@@ -1,4 +1,4 @@
-package com.dan.nothing
+package com.dan.nothing.adapter
 
 class ODCatogory(
     val idCategory: Int,

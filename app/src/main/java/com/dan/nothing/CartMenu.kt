@@ -5,10 +5,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dan.nothing.adapter2.OD
-import com.dan.nothing.adapter2.Util_demo
+import com.dan.nothing.adapter.Util_demo
 import com.dan.nothing.databinding.ActivityCartMenuBinding
 
 @SuppressLint("StaticFieldLeak")

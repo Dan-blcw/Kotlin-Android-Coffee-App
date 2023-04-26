@@ -1,6 +1,7 @@
 package com.dan.nothing
 
-import com.dan.nothing.adapter2.OD
+import com.dan.nothing.adapter.OD
+import com.dan.nothing.adapter.ODCatogory
 
 class const {
     companion object {

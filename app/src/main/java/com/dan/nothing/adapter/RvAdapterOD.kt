@@ -1,4 +1,4 @@
-package com.dan.nothing.adapter2
+package com.dan.nothing.adapter
 
 import android.view.LayoutInflater
 import android.view.View

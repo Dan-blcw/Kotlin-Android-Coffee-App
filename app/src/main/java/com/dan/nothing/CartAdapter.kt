@@ -1,18 +1,19 @@
 package com.dan.nothing
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.dan.nothing.adapter2.OD
-import com.dan.nothing.adapter2.Util_demo
+import com.dan.nothing.adapter.OD
+import com.dan.nothing.adapter.Util_demo
 
 class CartAdapter(var list:List<OD>, val util: Util_demo): RecyclerView.Adapter<CartAdapter.TilleView>() {
     // class Viewholder
@@ -50,11 +51,21 @@ class CartAdapter(var list:List<OD>, val util: Util_demo): RecyclerView.Adapter<
             }
             btnClose.setOnClickListener{
                 Toast.makeText(context,"Close",Toast.LENGTH_SHORT).show()
-                const.subByID(list[position].idItem)
-                const.payments = const.payments - list[position].price
+                val dialog = AlertDialog.Builder(context)
+                dialog.apply {
+                    setTitle("Confirm Window")
+                    setMessage("Have you confirmed to remove the item from the cart?")
+                    setNegativeButton("No"){ dialogInterface: DialogInterface, i: Int ->
+                        dialogInterface.dismiss()
+                    }
+                    setPositiveButton("Yes"){ dialogInterface: DialogInterface, i: Int ->
+                        const.subByID(list[position].idItem)
+                        const.payments = const.payments - list[position].price
+                    }
+                }.show()
             }
             btnPrice.setOnClickListener{
-                Toast.makeText(context,"Change",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"You just click on Change",Toast.LENGTH_SHORT).show()
             }
         }
     }

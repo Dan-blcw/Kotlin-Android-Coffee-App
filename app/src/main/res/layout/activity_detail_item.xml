@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/layout_button"
+    android:background="@drawable/layout_backg1"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Det">
@@ -24,7 +24,7 @@
                 android:id="@+id/imgDetail"
                 android:layout_width="159dp"
                 android:layout_height="233dp"
-                app:srcCompat="@drawable/img_3" />
+                app:srcCompat="@drawable/img_item" />
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
