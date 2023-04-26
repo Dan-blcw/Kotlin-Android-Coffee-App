@@ -6,8 +6,7 @@
 - It means there are some features i haven't added here, but i think it is enough for 1 training session
 - 
 ## Prerequisites
-- JDK 19
-- kotlin
+- Kotlin
 - Gradle
 - Android studio
 ## Demo
