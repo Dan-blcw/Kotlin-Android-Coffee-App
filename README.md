@@ -15,7 +15,7 @@
 ![image](https://user-images.githubusercontent.com/127305381/236304244-9a5d8467-c8b7-40e6-a091-aedf958235e1.png)
 ![image](https://user-images.githubusercontent.com/127305381/236305331-3bea92ea-fce7-4b75-a784-75f56be3e451.png)
 #### Detail Item(take 2 examples for demo)
-![image](https://user-images.githubusercontent.com/127305381/234644415-b85274fb-e38e-4c6b-a36c-a4a4cb932991.png)
+![image](https://user-images.githubusercontent.com/127305381/236306099-53c4be98-efcc-4125-ac69-89391ede23e5.png)
 #### Cart Item and pay(and a few other functions)
 ![image](https://user-images.githubusercontent.com/127305381/234647031-343a5c88-320f-4df4-ae86-caa562d681e9.png)
 #### Profile
