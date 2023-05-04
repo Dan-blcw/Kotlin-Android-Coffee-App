@@ -13,6 +13,7 @@
 ![image](https://user-images.githubusercontent.com/127305381/236302001-fdfa7228-0eda-49b2-95d7-8b7569e09dc4.png)
 #### Home (click category)
 ![image](https://user-images.githubusercontent.com/127305381/236304244-9a5d8467-c8b7-40e6-a091-aedf958235e1.png)
+![image](https://user-images.githubusercontent.com/127305381/236305134-d766ca49-29d4-44d4-be70-867b586cc53e.png)
 
 ![image](https://user-images.githubusercontent.com/127305381/234643321-965f086e-1852-41d1-8d01-06062e8636eb.png)
 #### Detail Item(take 2 examples for demo)
