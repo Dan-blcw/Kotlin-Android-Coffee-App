@@ -10,7 +10,7 @@
 - Android studio
 ## Demo
 #### SLashHome
-![image](https://user-images.githubusercontent.com/127305381/234641656-c7ef4b0a-fd10-49d2-a6bc-28d83e7a485a.png)
+![image](https://user-images.githubusercontent.com/127305381/236302001-fdfa7228-0eda-49b2-95d7-8b7569e09dc4.png)
 #### Home (click category)
 ![image](https://user-images.githubusercontent.com/127305381/234643321-965f086e-1852-41d1-8d01-06062e8636eb.png)
 #### Detail Item(take 2 examples for demo)
