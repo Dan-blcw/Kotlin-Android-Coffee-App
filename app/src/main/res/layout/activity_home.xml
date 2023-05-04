@@ -54,7 +54,7 @@
                 android:background="@color/black"
                 app:cardCornerRadius="5dp">
 
-                <SearchView
+                <androidx.appcompat.widget.SearchView
                     android:id="@+id/edtSearchView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />

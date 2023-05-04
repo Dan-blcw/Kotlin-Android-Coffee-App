@@ -83,7 +83,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:text="What's up, i'm Dan and I am a software developer. Currently, I'm working on a new app that revolves around coffee. Being a coffee lover myself, I'm excited to create a platform that helps users discover origins, brewing methods, and new cafes to try. The app will have a personalized recommendation system based on the user's interests and location. I believe the world of coffee is constantly evolving and I'm excited to be a part of it."
-                android:textSize="18sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

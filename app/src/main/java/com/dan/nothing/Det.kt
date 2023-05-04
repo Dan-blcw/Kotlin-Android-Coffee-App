@@ -10,9 +10,9 @@ import androidx.appcompat.app.AlertDialog
 import com.bumptech.glide.Glide
 import com.dan.nothing.databinding.ActivityDetailItemBinding
 import com.dan.nothing.databinding.CustomBuyItemBinding
-
 @SuppressLint("StaticFieldLeak")
 private lateinit var binding: ActivityDetailItemBinding
+@Suppress("DEPRECATION")
 class Det : AppCompatActivity() {
     lateinit var diolog: AlertDialog
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -88,8 +88,7 @@ class Det : AppCompatActivity() {
         val id = intent.getIntExtra("id",0)
         val oj = const.findByID(id)
         binding.btnExitDetail.setOnClickListener {
-            val intent = Intent(this@Det,Home::class.java)
-            startActivity(intent)
+            onBackPressed()
         }
         binding.txtDetailTit.setText(oj?.title)
         binding.txtDescrip0.setText(oj?.ingredients)
