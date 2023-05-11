@@ -8,6 +8,8 @@
 - Kotlin
 - Gradle
 - Android studio
+## Preamble
+![image](https://github.com/Dan-blcw/Kotlin-Android-Coffee-App/assets/127305381/0b27fb90-fc83-4cf8-bec0-eab60244db58)
 ## Demo
 #### SLashHome
 ![image](https://user-images.githubusercontent.com/127305381/236302001-fdfa7228-0eda-49b2-95d7-8b7569e09dc4.png)
